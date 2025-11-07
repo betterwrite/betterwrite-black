@@ -1,0 +1,24 @@
+type Core {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateCoreInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateCoreInput {
+  id: Int!
+}
+
+type Query {
+  core: [Core]!
+  core(id: Int!): Core
+}
+
+type Mutation {
+  createCore(createCoreInput: CreateCoreInput!): Core!
+  updateCore(updateCoreInput: UpdateCoreInput!): Core!
+  removeCore(id: Int!): Core
+}
